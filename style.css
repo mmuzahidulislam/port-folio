@@ -1,0 +1,136 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+/* Header */
+header {
+  background: linear-gradient(45deg, #4a90e2, #50b3a2);
+  color: #fff;
+  text-align: center;
+  padding: 60px 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header .title-pic {
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  border: 5px solid #fff;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+header p {
+  max-width: 700px;
+  margin: 0 auto 20px;
+  font-size: 1.2rem;
+  line-height: 1.8;
+}
+
+header .download-cv {
+  display: inline-block;
+  background: #1abc9c;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: background 0.3s;
+}
+
+header .download-cv:hover {
+  background: #16a085;
+}
+
+/* Section */
+section {
+  padding: 40px 20px;
+  margin: 20px auto;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #4a90e2;
+}
+
+/* About Me */
+#about-me .info-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.info-box {
+  flex: 1;
+  min-width: 300px;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Gallery */
+/* Gallery */
+#gallery .gallery-container {
+  display: flex;
+  flex-wrap: wrap; /* Allows images to wrap to the next row */
+  justify-content: center; /* Centers the images horizontally */
+  gap: 20px; /* Adds consistent spacing between items */
+}
+
+.gallery-item {
+  flex: 1 1 calc(25% - 20px); /* Responsive items: 4 items per row with a 20px gap */
+  max-width: calc(25% - 20px); /* Matches the width calculation for uniformity */
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 150px; /* Set a consistent height */
+  object-fit: cover; /* Ensures the image is cropped proportionally */
+  transition: transform 0.3s ease;
+}
+
+.gallery-item:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.gallery-item img:hover {
+  transform: scale(1.05);
+}
+
+
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #333;
+  color: #fff;
+  font-size: 0.9rem;
+}
